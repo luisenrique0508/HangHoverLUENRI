@@ -10,8 +10,8 @@ Este es un sitio web para ingeniería. El proyecto contiene:
 Clone este repositorio y abra el archivo index.html en su navegador.
 
 ```
-git clone https://github.com/su-usuario/SITIOWEBiNge.git
-cd SITIOWEBiNge
+git clone https://github.com/luisenrique0508/HangHoverLUENRI.git
+cd HangHoverLUENRI
 ```
 
 ## Contribuir
