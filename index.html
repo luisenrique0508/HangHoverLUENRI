@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hangover - Web Design & Photography</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .header {
+        background: url(img/head.jpg) center/cover no-repeat;
+      }
+
+      /* Estilos esenciales que Bootstrap no cubre */
+      .portfolio-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 0 auto;
+      }
+
+      /* Ajustes para el grid del portfolio */
+      .portfolio-container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .portfolio-item {
+        padding: 15px;
+      }
+
+      .card {
+        background: transparent;
+        border: none;
+      }
+
+      /* Modificar estilos de los botones del portfolio */
+      .nav-pills .nav-link {
+        background-color: #343a40; /* gris oscuro */
+        color: #17a2b8; /* celeste */
+        padding: 0.75rem 2rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .nav-pills .nav-link:hover {
+        transform: translateY(-2px);
+      }
+
+      .nav-pills .nav-link.active {
+        background-color: #17a2b8 !important; /* celeste */
+        color: #343a40; /* gris oscuro */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+
+      /* Solo efectos de hover personalizados */
+      .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--bs-box-shadow-lg) !important;
+      }
+    </style>
+  </head>
+
+  <body id="pageTop" class="overflow-x-hidden">
+    <main>
+      <!-- Header más responsive -->
+      <div class="container-fluid">
+        <div
+          class="header min-vh-100 d-flex flex-column justify-content-between"
+          id="home"
+        >
+          <!-- Navbar mejorado -->
+          <nav
+            class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3 py-lg-4"
+          >
+            <div class="container-fluid px-4 px-lg-5">
+              <!-- Logo y marca a la izquierda -->
+              <div class="d-flex align-items-center ms-2">
+                <img
+                  src="img/fav.png"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="bg-info me-2"
+                />
+                <a class="navbar-brand text-info fw-bold" href="#">HANGOVER</a>
+              </div>
+
+              <!-- Botón de menú móvil -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Links a la derecha -->
+              <div
+                class="collapse navbar-collapse justify-content-end me-2"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link active text-info" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#aboutMe">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#portafolio"
+                      >PORTFOLIO</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Contenido central del header -->
+          <div class="row my-auto text-center">
+            <div class="col-12">
+              <h1
+                class="display-1 text-white mb-4 animate__animated animate__fadeIn"
+              >
+                HANGOVER
+              </h1>
+              <p class="text-white fs-5 mb-4">
+                Web Design • Photography • Product Design
+              </p>
+              <button
+                type="button"
+                class="btn btn-info btn-lg text-white shadow-sm hover-lift"
+              >
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me section -->
+      <div
+        id="aboutMe"
+        class="bg-info min-vh-100 d-flex align-items-center py-5"
+      >
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center mb-5">
+              <h2 class="display-4 text-secondary">About Me</h2>
+              <hr class="w-25 mx-auto" />
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <img
+                  src="img/bartender.png"
+                  alt=""
+                  class="img-fluid rounded shadow mx-auto d-block"
+                  style="width: 1050px; height: 600px"
+                />
+              </div>
+              <div class="col-12 col-lg-6">
+                <p class="text-secondary text-center text-lg-start">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                  dolore. Non libero, provident illum facere quidem ipsa magnam
+                  reiciendis corrupti dolorem cumque fugiat veritatis!
+                  Temporibus aspernatur at ad nobis deleniti. Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Ad, dolore. Non libero,
+                  provident illum facere quidem ipsa magnam reiciendis corrupti
+                  dolorem cumque fugiat veritatis! Temporibus aspernatur at ad
+                  nobis deleniti.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio section -->
+      <div
+        id="portafolio"
+        class="bg-secondary min-vh-100 d-flex align-items-center"
+      >
+        <div class="container py-5">
+          <h2 class="display-4 text-center text-info mb-4">Portfolio</h2>
+          <hr class="w-25 mx-auto mb-5" />
+
+          <!-- Nav pills responsive -->
+          <ul
+            class="nav nav-pills mb-4 justify-content-center flex-column flex-md-row gap-2 gap-md-4"
+          >
+            <li class="nav-item">
+              <button
+                class="nav-link active w-100 fw-bold"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-all"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link w-100 fw-bold"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-web"
+              >
+                Web Design
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link w-100 fw-bold"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-photography"
+              >
+                Photography
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link w-100 fw-bold"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-ProductDesign"
+              >
+                Product Design
+              </button>
+            </li>
+          </ul>
+
+          <!-- Portfolio grid -->
+          <div class="tab-content" data-aos="fade-up">
+            <div class="tab-pane fade show active" id="pills-all">
+              <div class="portfolio-container">
+                <div class="row g-4">
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/01-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/02-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/03-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/04-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/05-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/06-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/07-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/08-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/09-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/10-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/11-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/12-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-web">
+              <div class="portfolio-container">
+                <div class="row g-4">
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/01-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/03-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/04-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/08-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/12-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-photography">
+              <div class="portfolio-container">
+                <div class="row g-4">
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/06-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/07-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/10-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/11-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-ProductDesign">
+              <div class="portfolio-container">
+                <div class="row g-4">
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/02-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/05-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 portfolio-item">
+                    <div class="card hover-lift">
+                      <img
+                        src="./img/09-large.jpg"
+                        alt=""
+                        class="portfolio-image shadow"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div id="contact" class="bg-info min-vh-100 d-flex align-items-center">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+              <h2 class="display-4 text-secondary text-center mb-4">
+                Get In Touch
+              </h2>
+              <hr class="w-25 mx-auto mb-5" />
+
+              <form
+                class="p-4 bg-white rounded shadow needs-validation"
+                novalidate
+              >
+                <div class="row">
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="name" class="form-label text-secondary"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter your name</div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="email" class="form-label text-secondary"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label for="message" class="form-label text-secondary"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-dark text-info w-100">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-center text-info py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo y descripción -->
+         
+
+          <!-- Redes sociales -->
+          <div class="col-12">
+            <ul class="list-unstyled d-flex justify-content-center gap-4 mb-4">
+              <li>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="btn btn-outline-info rounded-circle d-inline-flex align-items-center justify-content-center hover-lift"
+                  style="width: 40px; height: 40px"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  class="btn btn-outline-info rounded-circle d-inline-flex align-items-center justify-content-center hover-lift"
+                  style="width: 40px; height: 40px"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="btn btn-outline-info rounded-circle d-inline-flex align-items-center justify-content-center hover-lift"
+                  style="width: 40px; height: 40px"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io"
+                  target="_blank"
+                  class="btn btn-outline-info rounded-circle d-inline-flex align-items-center justify-content-center hover-lift"
+                  style="width: 40px; height: 40px"
+                  aria-label="CodePen"
+                >
+                  <i class="fab fa-codepen"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Línea divisoria -->
+        <hr class="border-secondary my-4" />
+
+        <!-- Copyright -->
+        <div class="text-white-50 small">
+          <p class="mb-0">&copy; 2025 LU-ENRI-LEDEZMA </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vRk+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Validación del formulario
+      (function () {
+        "use strict";
+        var forms = document.querySelectorAll(".needs-validation");
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
